@@ -1,0 +1,16 @@
+library(readr)
+library(psych)
+maths<-c(65, 50, 55, 65, 55, 70, 65, 70, 55, 70, 50, 55)
+satas<-c(85, 74, 76, 90, 85, 87, 94, 98, 81, 91, 76, 74)
+plot(satas~maths)
+lm(satas~maths)
+
+lm(satas~maths)
+fit<-lm(satas~maths)
+summary(fit)
+
+man<-c(71, 68, 66, 67, 70, 71, 70, 73, 72, 65, 66)
+woman<-c(69, 64, 65, 63, 65, 62, 65, 64, 66, 59, 62)
+lm(man~woman)
+cor(man, woman)
+cor.test(man, woman)
